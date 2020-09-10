@@ -1,0 +1,40 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type UserType {
+  id: String!
+  name: String
+  email: String!
+  bio: String
+  account_type: Float
+  token: String
+  created_at: String!
+}
+
+type Query {
+  users: [UserType!]!
+  user: UserType!
+}
+
+type Mutation {
+  login(input: LoginInput!): UserType!
+  register(password: AuthInput!, input: RegisterInput!): UserType!
+}
+
+input LoginInput {
+  email: String!
+  password: String!
+}
+
+input AuthInput {
+  password: String!
+}
+
+input RegisterInput {
+  name: String!
+  bio: String!
+  account_type: Float!
+  email: String!
+  created_at: String
+}
