@@ -2467,7 +2467,7 @@
         "affectsGlobalScope": false
       },
       "../src/database/database.connection.service.ts": {
-        "version": "1381ca67f9a6f7d3db8ac5a534d9cb50f80254f5d9377ffd599c3026a5d70c10",
+        "version": "b394e01ded040210a7157a002662edce2466e80ce957a5c12df840135ec4c29d",
         "signature": "d0023ddcca64c0c3a540dc630fe2bda07caa019224299c5b9ef14b013d29399c",
         "affectsGlobalScope": false
       },

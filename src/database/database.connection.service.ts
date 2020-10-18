@@ -1,22 +1,20 @@
 import { Injectable } from '@nestjs/common';
 import 'dotenv/config';
 import { TypeOrmOptionsFactory, TypeOrmModuleOptions } from '@nestjs/typeorm';
-const { DB_HOST, DB_PORT, DB_USERNAME, DB_PASSWORD, DB_NAME } = process.env;
+const { DB_HOST, DB_PORT, DEV_DB, DB_PASSWORD, DATABASE_URL, DB_NAME, NODE_ENV } = process.env;
+
+const env = NODE_ENV === 'development' ? DEV_DB : DATABASE_URL
 
 @Injectable()
 export class DatabaseConnectionService implements TypeOrmOptionsFactory {
   createTypeOrmOptions(): TypeOrmModuleOptions {
     return {
-      type: 'postgres',
-      host: DB_HOST,
-      username: DB_USERNAME,
-      database: DB_NAME,
-      port: Number(DB_PORT),
-      password: DB_PASSWORD,
+      type:'postgres',
+      url: env,
       synchronize: true,
       migrations: ['build/migrations/*.ts'],
       dropSchema: false,
-      logging: true,
+      logging: false,
       entities: ['dist/**/*{.ts,.js}'],
       cli: {
         entitiesDir: 'src/entity',
