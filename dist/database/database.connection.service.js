@@ -20,19 +20,15 @@ let DatabaseConnectionService = class DatabaseConnectionService {
             port: Number(DB_PORT),
             password: DB_PASSWORD,
             synchronize: true,
-            migrations: [
-                'build/migrations/*.ts'
-            ],
+            migrations: ['build/migrations/*.ts'],
             dropSchema: false,
             logging: true,
-            entities: [
-                'dist/**/*{.ts,.js}'
-            ],
+            entities: ['dist/**/*{.ts,.js}'],
             cli: {
                 entitiesDir: 'src/entity',
                 migrationsDir: 'src/migrations',
-                subscribersDir: 'src/subscriber'
-            }
+                subscribersDir: 'src/subscriber',
+            },
         };
     }
 };

@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.AuthDTO = exports.RegisterDTO = exports.LoginDTO = void 0;
+exports.AuthDTO = exports.RegisterDTO = exports.UserDTO = exports.LoginDTO = void 0;
 const class_validator_1 = require("class-validator");
 class LoginDTO {
 }
@@ -22,30 +22,11 @@ __decorate([
     __metadata("design:type", String)
 ], LoginDTO.prototype, "password", void 0);
 exports.LoginDTO = LoginDTO;
+class UserDTO {
+}
+exports.UserDTO = UserDTO;
 class RegisterDTO {
 }
-__decorate([
-    class_validator_1.IsString(),
-    __metadata("design:type", String)
-], RegisterDTO.prototype, "name", void 0);
-__decorate([
-    class_validator_1.IsEmail(),
-    __metadata("design:type", String)
-], RegisterDTO.prototype, "email", void 0);
-__decorate([
-    class_validator_1.IsOptional(),
-    class_validator_1.IsString(),
-    __metadata("design:type", String)
-], RegisterDTO.prototype, "bio", void 0);
-__decorate([
-    class_validator_1.IsNumber(),
-    class_validator_1.IsOptional(),
-    __metadata("design:type", Number)
-], RegisterDTO.prototype, "account_type", void 0);
-__decorate([
-    class_validator_1.IsOptional(),
-    __metadata("design:type", String)
-], RegisterDTO.prototype, "created_at", void 0);
 exports.RegisterDTO = RegisterDTO;
 class AuthDTO {
 }

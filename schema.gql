@@ -3,23 +3,99 @@
 # ------------------------------------------------------
 
 type UserType {
-  id: String!
+  id: Float!
   name: String
   email: String!
   bio: String
-  account_type: Float
+  accountType: Float
   token: String
   created_at: String!
+}
+
+type CourseType {
+  course_id: String!
+  name: String!
+  date_created: String!
+  instructor: String
+  message: String
+}
+
+type student_courses {
+  id: String
+  name: String
+  date_created: String
+  instructor: String
+}
+
+type users {
+  id: String
+  name: String
+}
+
+type grade {
+  score: Float
+  description: String
+}
+
+type StudentType {
+  id: String
+  name: String
+  bio: String
+  instructor: String
+  student_courses: [student_courses!]!
+  users: [users!]
+  grade: grade
+}
+
+type studen_courses {
+  id: String
+  name: String
+  date_created: String
+}
+
+type user {
+  id: String
+  name: String
 }
 
 type Query {
   users: [UserType!]!
   user: UserType!
+  oneCourse(id: CourseInput!): CourseType!
+  allCourses: [CourseType!]!
+  readCourseByName(name: CourseInput!): CourseType!
+  delete(input: CourseInput!): CourseType!
+  students(input: StudentInput!): StudentType!
+  studentCourses: StudentType!
+  courseGrade(grade: GradeInput!, course: CourseInput!, input: GradeInput2!): StudentType!
+}
+
+input CourseInput {
+  course_id: String
+  name: String
+  date_created: String
+  instructor: String
+}
+
+input StudentInput {
+  name: String
+  course_id: String
+}
+
+input GradeInput {
+  score: Float!
+  description: String!
+}
+
+input GradeInput2 {
+  student_id: Float!
 }
 
 type Mutation {
-  login(input: LoginInput!): UserType!
-  register(password: AuthInput!, input: RegisterInput!): UserType!
+  signin(input: LoginInput!): UserType!
+  signup(password: AuthInput!, input: RegisterInput!): UserType!
+  create(input: CourseInput!): CourseType!
+  register(input: StudentInput!): StudentType!
 }
 
 input LoginInput {
@@ -34,7 +110,6 @@ input AuthInput {
 input RegisterInput {
   name: String!
   bio: String!
-  account_type: Float!
   email: String!
   created_at: String
 }

@@ -1,9 +1,9 @@
 export declare class UserType {
-    id: string;
+    id: number;
     name: string;
     email: string;
     bio: string;
-    account_type: number;
+    accountType: number;
     token: string;
     created_at: string;
 }
@@ -14,7 +14,6 @@ export declare class LoginInput {
 export declare class RegisterInput {
     name: string;
     bio: string;
-    account_type: number;
     email: string;
     created_at: string;
 }

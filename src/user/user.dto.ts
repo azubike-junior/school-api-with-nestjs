@@ -1,27 +1,31 @@
-import { IsEmail, IsString, IsOptional, IsNumber, IsDate } from 'class-validator';
+import {
+  IsEmail,
+  IsString,
+  IsOptional,
+  IsNumber,
+  IsDate,
+} from 'class-validator';
 
 export class LoginDTO {
-	@IsEmail() email: string;
+  @IsEmail() email: string;
 
-	@IsString() password: string;
+  @IsString() password: string;
+}
+
+export class UserDTO {
+  student_id: number;
 }
 
 export class RegisterDTO {
-	@IsString() name: string;
+  name: string;
 
-	@IsEmail() email: string;
+  email: string;
 
-	@IsOptional()
-	@IsString()
-	bio: string;
+  bio: string;
 
-	@IsNumber()
-	@IsOptional()
-	account_type: number;
-
-	@IsOptional() created_at: string;
+  created_at: string;
 }
 
 export class AuthDTO {
-	@IsString() password: string;
+  @IsString() password: string;
 }

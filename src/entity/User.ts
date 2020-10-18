@@ -1,19 +1,16 @@
-import {
-  Entity,
-  PrimaryGeneratedColumn,
-  Column,
-  OneToOne,
-  JoinColumn,
-  OneToMany,
-} from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
 import { IsEmail, IsString } from 'class-validator';
-import { Student_course } from './Student_courses';
-import { Account_type } from './Account_type';
 import * as jwt from 'jsonwebtoken';
+import { Student_course } from './Student_course';
+
+export enum account {
+  student,
+  instructor,
+}
 
 @Entity()
 export class User {
-  @PrimaryGeneratedColumn('uuid') id: string;
+  @PrimaryGeneratedColumn({ type: 'bigint' }) id: number;
 
   @Column({ name: 'name', nullable: false })
   @IsString()
@@ -29,15 +26,14 @@ export class User {
   @Column({ nullable: true })
   created_at: string;
 
-  @OneToOne(type => Account_type)
-  @JoinColumn({ name: 'account_type' })
-  account: Account_type;
+  @Column({ type: 'enum', enum: account, default: account.student })
+  accountType: account;
 
   @OneToMany(
     type => Student_course,
-    student_courses => student_courses.user,
+    student_course => student_course.user,
   )
-  public student_courses: Student_course[];
+  public student_courses: Array<Student_course>;
 
   public get token() {
     const { id } = this;
@@ -51,11 +47,29 @@ export class User {
   }
 
   public toResponseObject = (showToken: boolean = true) => {
-    const { id, name, bio, created_at, email, token } = this;
-    const responseObject = { id, name, bio, email, created_at, token };
+    const { id, name, bio, created_at, accountType, email, token } = this;
+    const responseObject = {
+      id,
+      name,
+      bio,
+      email,
+      accountType,
+      created_at,
+      token,
+    };
     if (showToken) {
       responseObject.token = token;
     }
     return responseObject;
   };
 }
+
+//adanma.orji@gmail.com eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUiLCJpYXQiOjE2MDIwODYzNjgsImV4cCI6MTYwMjY5MTE2OH0.2tyUTzWuMHLdjb9-eER5E2nM3w0UTD1-rrdBOsPh6fE
+
+// ade@gmail.com eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJpYXQiOjE2MDIwODY1NzQsImV4cCI6MTYwMjY5MTM3NH0.BWumdmyE5qaFO-e4eay2PWvuipFyc_PHsi9ZESMPNqM
+
+//azubike eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJpYXQiOjE2MDIwODY3MDQsImV4cCI6MTYwMjY5MTUwNH0.DgAdOEve-gc1Q1nn7nRaKBwAoCEHf6gN_Y9j_4EboYE
+
+//junior.orji eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQiLCJpYXQiOjE2MDIwODY3ODIsImV4cCI6MTYwMjY5MTU4Mn0.5HY_GjHNNE9udCzGL8JiNOJAEDV1Jd2NGn1K6-62UuU
+
+//sean eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMiLCJpYXQiOjE2MDIwODY4NTYsImV4cCI6MTYwMjY5MTY1Nn0.Wb5UcuFP8ic_SfBsPFA3qedKmooMeAKAzwhvhj5qK-o

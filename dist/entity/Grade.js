@@ -11,7 +11,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Grades = void 0;
 const typeorm_1 = require("typeorm");
-const Student_courses_1 = require("./Student_courses");
 let Grades = class Grades {
 };
 __decorate([
@@ -26,10 +25,6 @@ __decorate([
     typeorm_1.Column({ nullable: false }),
     __metadata("design:type", String)
 ], Grades.prototype, "description", void 0);
-__decorate([
-    typeorm_1.OneToMany(() => Student_courses_1.Student_course, (student_grade) => student_grade.grade),
-    __metadata("design:type", Student_courses_1.Student_course)
-], Grades.prototype, "grade", void 0);
 Grades = __decorate([
     typeorm_1.Entity()
 ], Grades);

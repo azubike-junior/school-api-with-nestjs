@@ -23,23 +23,95 @@ let CourseService = class CourseService {
         this.courseRepo = courseRepo;
         this.userRepo = userRepo;
     }
+    async create(data, user) {
+        let { id } = user;
+        let { name } = data;
+        const oneCourse = await this.courseRepo.findOne({ where: { name } });
+        const oneUser = await this.userRepo.findOne({ where: { id } });
+        if (oneUser.accountType === 1) {
+            if (!oneCourse) {
+                const users = new User_1.User();
+                users.id = id;
+                await this.userRepo.save(users);
+                let course = new Courses_1.Courses();
+                course.name = name;
+                course.date_created = new Date();
+                course.user = users;
+                await this.courseRepo.save(course);
+                return {
+                    id: course.id,
+                    name: course.name,
+                    date_created: course.date_created,
+                    instructor: oneUser.name,
+                };
+            }
+            throw new common_1.HttpException(`this course already exists`, common_1.HttpStatus.BAD_REQUEST);
+        }
+        throw new common_1.HttpException(`Unauthorized access`, common_1.HttpStatus.BAD_REQUEST);
+    }
+    async showOne(id) {
+        const course = await this.courseRepo.findOne({
+            where: { id },
+            relations: ['user'],
+        });
+        if (course.id !== id) {
+            throw new common_1.HttpException(`No course with this ID ${id} is found`, common_1.HttpStatus.NOT_FOUND);
+        }
+        return {
+            id: course.id,
+            name: course.name,
+            date_created: course.date_created,
+            instructor: course.user.name,
+        };
+    }
     async showAll() {
-        return await this.courseRepo.find();
+        const courses = await this.courseRepo.find({ relations: ['user'] });
+        courses.forEach(course => {
+            return {
+                id: course.id,
+                name: course.name,
+                date_created: course.date_created,
+                instructor: course.user.name,
+            };
+        });
+        return courses;
     }
     async ReadByName(name) {
-        return await this.courseRepo.findOne({ where: { name } });
+        const course = await this.courseRepo.findOne({
+            where: { name },
+            relations: ['user'],
+        });
+        return {
+            id: course.id,
+            name: course.name,
+            date_created: course.date_created,
+            instructor: course.user.name,
+        };
     }
-    async ReadByInstructor(instructor) {
-        return await this.courseRepo.find({ where: { instructor } });
-    }
-    async create(courseData) {
-        return this.courseRepo.create(courseData);
+    async deleteCourse(course_id, user) {
+        const { id } = user;
+        const foundUser = await this.userRepo.findOne({ where: { id } });
+        if (foundUser.accountType === 1) {
+            const course = await this.courseRepo.findOne({
+                where: { id: course_id },
+            });
+            if (course) {
+                await this.courseRepo.delete({ id: course_id });
+                return {
+                    message: `course with this ID ${course_id} has been deleted`,
+                };
+            }
+            throw new common_1.HttpException(`No course with this ID ${course_id} is found`, common_1.HttpStatus.NOT_FOUND);
+        }
+        throw new common_1.HttpException(`user is not an instructor`, common_1.HttpStatus.UNAUTHORIZED);
     }
 };
 CourseService = __decorate([
     common_1.Injectable(),
-    __param(0, typeorm_1.InjectRepository(Courses_1.Courses)), __param(1, typeorm_1.InjectRepository(User_1.User)),
-    __metadata("design:paramtypes", [typeorm_2.Repository, typeorm_2.Repository])
+    __param(0, typeorm_1.InjectRepository(Courses_1.Courses)),
+    __param(1, typeorm_1.InjectRepository(User_1.User)),
+    __metadata("design:paramtypes", [typeorm_2.Repository,
+        typeorm_2.Repository])
 ], CourseService);
 exports.CourseService = CourseService;
 //# sourceMappingURL=course.service.js.map

@@ -15,7 +15,7 @@ let UserType = class UserType {
 };
 __decorate([
     graphql_1.Field(),
-    __metadata("design:type", String)
+    __metadata("design:type", Number)
 ], UserType.prototype, "id", void 0);
 __decorate([
     graphql_1.Field({ nullable: true }),
@@ -32,7 +32,7 @@ __decorate([
 __decorate([
     graphql_1.Field({ nullable: true }),
     __metadata("design:type", Number)
-], UserType.prototype, "account_type", void 0);
+], UserType.prototype, "accountType", void 0);
 __decorate([
     graphql_1.Field({ nullable: true }),
     __metadata("design:type", String)
@@ -69,10 +69,6 @@ __decorate([
     graphql_1.Field(),
     __metadata("design:type", String)
 ], RegisterInput.prototype, "bio", void 0);
-__decorate([
-    graphql_1.Field(),
-    __metadata("design:type", Number)
-], RegisterInput.prototype, "account_type", void 0);
 __decorate([
     graphql_1.Field({ nullable: false }),
     __metadata("design:type", String)

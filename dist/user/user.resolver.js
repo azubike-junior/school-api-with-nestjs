@@ -29,17 +29,15 @@ let UserResolver = class UserResolver {
         const { id } = user;
         return this.userService.read(id);
     }
-    async login(input) {
+    async signin(input) {
         return this.userService.login(input);
     }
-    register(input, password) {
+    async signup(input, password) {
         return this.userService.register(input, password);
     }
 };
 __decorate([
-    graphql_1.Query(() => [
-        user_gpl_1.UserType
-    ]),
+    graphql_1.Query(() => [user_gpl_1.UserType]),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
@@ -58,16 +56,18 @@ __decorate([
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [user_gpl_1.LoginInput]),
     __metadata("design:returntype", Promise)
-], UserResolver.prototype, "login", null);
+], UserResolver.prototype, "signin", null);
 __decorate([
     graphql_1.Mutation(() => user_gpl_1.UserType),
-    __param(0, graphql_1.Args('input')), __param(1, graphql_1.Args('password')),
+    __param(0, graphql_1.Args('input')),
+    __param(1, graphql_1.Args('password')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [user_gpl_1.RegisterInput, user_gpl_1.AuthInput]),
-    __metadata("design:returntype", void 0)
-], UserResolver.prototype, "register", null);
+    __metadata("design:paramtypes", [user_gpl_1.RegisterInput,
+        user_gpl_1.AuthInput]),
+    __metadata("design:returntype", Promise)
+], UserResolver.prototype, "signup", null);
 UserResolver = __decorate([
-    graphql_1.Resolver((of) => user_gpl_1.UserType),
+    graphql_1.Resolver(of => user_gpl_1.UserType),
     __metadata("design:paramtypes", [user_service_1.UserService])
 ], UserResolver);
 exports.UserResolver = UserResolver;

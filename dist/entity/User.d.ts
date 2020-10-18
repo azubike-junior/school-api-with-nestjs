@@ -1,19 +1,23 @@
-import { Student_course } from './Student_courses';
-import { Account_type } from './Account_type';
+import { Student_course } from './Student_course';
+export declare enum account {
+    student = 0,
+    instructor = 1
+}
 export declare class User {
-    id: string;
+    id: number;
     name: string;
     email: string;
     bio: string;
     created_at: string;
-    account: Account_type;
-    student_courses: Student_course[];
+    accountType: account;
+    student_courses: Array<Student_course>;
     get token(): string;
     toResponseObject: (showToken?: boolean) => {
-        id: string;
+        id: number;
         name: string;
         bio: string;
         email: string;
+        accountType: account;
         created_at: string;
         token: string;
     };

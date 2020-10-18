@@ -1161,16 +1161,6 @@
         "signature": "ceadf8ae9b705cdfa854ab0efc44d22509e8e2a0d9ff35206bde3a954e469f07",
         "affectsGlobalScope": false
       },
-      "../src/app.service.ts": {
-        "version": "eaf8514ce110fa428a93a27408df4d06d133dbd9ed0a775c315ddfdd507853a9",
-        "signature": "d8f4cb0109c1b399d657807fd6af504d74a9300325e0fc915abdbf658b464a97",
-        "affectsGlobalScope": false
-      },
-      "../src/app.controller.ts": {
-        "version": "260f889b9e2b69f77be1155348eb345166aec664b3efff6720053c6844a41f28",
-        "signature": "3293b0d1d6a7f902316e164fcf36ae099f1bbb0224484586eaab30d9dea78d32",
-        "affectsGlobalScope": false
-      },
       "../node_modules/typeorm/schema-builder/options/tablecolumnoptions.d.ts": {
         "version": "222ebf19b1260582fd2023a65c5b7da77f730021f05afb9c4ead4b0b339a8c98",
         "signature": "222ebf19b1260582fd2023a65c5b7da77f730021f05afb9c4ead4b0b339a8c98",
@@ -2477,7 +2467,7 @@
         "affectsGlobalScope": false
       },
       "../src/database/database.connection.service.ts": {
-        "version": "896515590f82c5983467f4d7c615b32a9bd99e909409f0b7ffb1d110eb03b749",
+        "version": "1381ca67f9a6f7d3db8ac5a534d9cb50f80254f5d9377ffd599c3026a5d70c10",
         "signature": "d0023ddcca64c0c3a540dc630fe2bda07caa019224299c5b9ef14b013d29399c",
         "affectsGlobalScope": false
       },
@@ -3096,26 +3086,6 @@
         "signature": "1d5f30cbd06ffa2aab22346b087e140f069851c17b91189be8d1e168d53f9f93",
         "affectsGlobalScope": false
       },
-      "../src/entity/courses.ts": {
-        "version": "07fb4103add36165f52b2c43f03280a9718218d681734015b9668ec7486d22a2",
-        "signature": "f60b02afa994108b3388c858ad8048343875797bc95f2232dd27b6945d75f3f6",
-        "affectsGlobalScope": false
-      },
-      "../src/entity/grade.ts": {
-        "version": "2d2eff2910885a7d1d0520234c2e986c4b59328c642e65b5dc72003f1c350392",
-        "signature": "b8d51e76bbb07f62278e5ed5df1614f32455af534e4e019cc7038fbfee88c623",
-        "affectsGlobalScope": false
-      },
-      "../src/entity/student_courses.ts": {
-        "version": "9a3cb0f1c369af2404f0a18fb9e8392e18535ea9da6ac2c0bd8ea54d7c320bb1",
-        "signature": "afb3c5eb8700584ea8bea5042016debe4d980856df3794ed13bf267bc6c5d53f",
-        "affectsGlobalScope": false
-      },
-      "../src/entity/account_type.ts": {
-        "version": "f49e62e27d2e7c4e64fd3ab0b31bad5c753607354d1bf81183fea910f048531d",
-        "signature": "fa65676aaf5903791ce9b2ff11fa2b9fff745aa19ff88c3e7dd3b77c579b8a3a",
-        "affectsGlobalScope": false
-      },
       "../node_modules/@types/node/globals.d.ts": {
         "version": "86dd4bc57259052b7a32fb8ca1767d43f146c199b0ca145e0b7dcad4b8628310",
         "signature": "86dd4bc57259052b7a32fb8ca1767d43f146c199b0ca145e0b7dcad4b8628310",
@@ -3371,14 +3341,29 @@
         "signature": "f67c920eba6ab8e4558cb9ab661d900188f101c5657e19b1e15829a1d491d46e",
         "affectsGlobalScope": false
       },
+      "../src/entity/grade.ts": {
+        "version": "8fde549d14ffa68adf2fc981e51a3ee9cef13fecef37f3caaaefa40c45fb8b92",
+        "signature": "fa0c22233c469980aed9f803d66aaacf004555355ddc39f6f531168f86a53ce1",
+        "affectsGlobalScope": false
+      },
+      "../src/entity/courses.ts": {
+        "version": "dd273809bdd4dc4e10721bb139399d7f601534aa3f56e4e2ed754f3568395277",
+        "signature": "5933902462649552ec662cf7873f0b964b549295cbf4916f81d6090c1f4193b3",
+        "affectsGlobalScope": false
+      },
+      "../src/entity/student_course.ts": {
+        "version": "39d41fd256abfbb69f0dfca90889739b0a87a6af60aa4b6b9b2fd0bd6fa35bc4",
+        "signature": "6fbbb00ff98c7feae110e93b8c48e7a9a0cc90d4fb5558b9a60d51d7b4ea5d10",
+        "affectsGlobalScope": false
+      },
       "../src/entity/user.ts": {
-        "version": "34a8467c8d4e02ea7c13247354bd6007b5355c6dc3720953c33970177d5e65e3",
-        "signature": "389ee22b07e308b761db66c41112f2ddc02ca3168cc83bd082c2659238586c4b",
+        "version": "2f5d71ba63a33eb431dca7078cc321dfb43b260137110c947ef152a70631dda7",
+        "signature": "0a20fe2311883b824b22347d87de46cf4664ae7bee38a28424a441b49ee3506b",
         "affectsGlobalScope": false
       },
       "../src/user/user.dto.ts": {
-        "version": "54ccdd6ebb765cd60da0d465e4b3fad7649a1611ffbca5a2ce63338bfec5952c",
-        "signature": "83e6edda5762570081e76bfc909b00d6930acb86e8f1d9953193507e348a3013",
+        "version": "b19ad2cc5bb9a5f9237f577c00464edc4ba47527f337e5ddd97f7d48d44d0b7c",
+        "signature": "bb2ac3b261313801722841f1828cdbf17e6f7af68c5104d3e6b0e144d30b8105",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/bcryptjs/index.d.ts": {
@@ -3397,8 +3382,8 @@
         "affectsGlobalScope": false
       },
       "../src/user/user.service.ts": {
-        "version": "f9dcb74c75048018cb30ce4104867ac5e3a2d383e019b9aaf5d5541a4c6d181e",
-        "signature": "01fdfce638f19e34b0d8ff5bdb3a34737b111d68aeee671727c02ceaa21e4572",
+        "version": "b2d7c629347d9f33ce9f1fa6f86345c1237f714b03d6e18baed1dc7ef0006f2d",
+        "signature": "bde22378e3429f67ca5e444bdea009669fff3f43d61fdadb2647fe572e628de7",
         "affectsGlobalScope": false
       },
       "../node_modules/@nestjs/graphql/dist/decorators/args-type.decorator.d.ts": {
@@ -6126,8 +6111,8 @@
         "affectsGlobalScope": false
       },
       "../src/user/user.gpl.ts": {
-        "version": "46395aec3ef66dd2501c77c797cdea4c1408cef01f173dff785d297062bcd9e6",
-        "signature": "8d34e583e971f7394484eb2ff1b683bb377a4be8855ba59f8eb86d04ccca2e06",
+        "version": "3909fc407036ec149bff889a2d7de9c3de6f0cec9ee33cc4f6f5bc32203953aa",
+        "signature": "59436658a6690cfe9c085856a7e47a2588628c2b13ee5e23e71c575e67f4c25a",
         "affectsGlobalScope": false
       },
       "../src/shared/auth-guard.ts": {
@@ -6136,12 +6121,12 @@
         "affectsGlobalScope": false
       },
       "../src/user/user.resolver.ts": {
-        "version": "b2c14d60fe774269a23a513402c2cc36cbe451319612197e7c6ce5ba12d51b00",
-        "signature": "b91beda9480790aaa523ef03771ff71a5c444a2e043ada689148e4eacb99bfbf",
+        "version": "211979a2ae24bf2b465009b143bb1aef63c1e34a987636a261bb6e3e2ce974d6",
+        "signature": "25fc4e2a19ce61db12370d6ef977211d769d45a42d930766e160ca0c28ebc426",
         "affectsGlobalScope": false
       },
       "../src/user/user.module.ts": {
-        "version": "9e63dba27f931db0abc1132d53a52214aab0e17076b4959a12dbe2831af9d6c9",
+        "version": "5f46be25b02ddda16be9a7670a3281964359af0acdc1d2c078006752d38214b3",
         "signature": "9e36626cb39f17790cf2403e2e54d8a74542da63e2a49aba7061133a1af26dcd",
         "affectsGlobalScope": false
       },
@@ -6666,88 +6651,8 @@
         "affectsGlobalScope": false
       },
       "../src/shared/logging-interceptor.ts": {
-        "version": "0a7b68b2ce3187cd3dd19b9c3c93cd7dedc616560f55e6871b7f9946cb0a221e",
-        "signature": "552799344b6e1c4183b83be3c5a284e99401c5eb13695436810e199d6abfa9b8",
-        "affectsGlobalScope": false
-      },
-      "../src/app.module.ts": {
-        "version": "22453dd8ada7629e3be7f481c44949c3a90a2939b561e533febf405875b39f4d",
-        "signature": "9fc7f7b6ad854404973b8cba8e6d883f758237991968e9a3965d716d46f1da88",
-        "affectsGlobalScope": false
-      },
-      "../src/main.ts": {
-        "version": "f76a570e82bee94b7133bcc457f47e2e150bf757bcf7b9333285257b357cbc9c",
-        "signature": "0e7c6f172815224902d2b780918250d131abb33ddc0f2e042ab423db53f72370",
-        "affectsGlobalScope": false
-      },
-      "../src/course/course.gpl.ts": {
-        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "affectsGlobalScope": false
-      },
-      "../src/course/course.resolver.ts": {
-        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "affectsGlobalScope": false
-      },
-      "../src/course/course.service.ts": {
-        "version": "b6d8a4aa2a1140c87a001d8046c42f76fe8758655634a0564ce6ee337c0c5e37",
-        "signature": "37f00b27775db72febaa2fc7a36db4628a7098c92c789b3a4751a759d33cd2dc",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/faker/index.d.ts": {
-        "version": "7949f1133bcca7581df8fd7a9be3b4f407c4c80edbf21957ea00e7f6cbad0e02",
-        "signature": "7949f1133bcca7581df8fd7a9be3b4f407c4c80edbf21957ea00e7f6cbad0e02",
-        "affectsGlobalScope": true
-      },
-      "../node_modules/typeorm-seeding/dist/entity-factory.d.ts": {
-        "version": "ebcf8c25d0ffcacc0f902f8cc2ea0f39c9e8a79ef09c26312c80124048ad7d6b",
-        "signature": "ebcf8c25d0ffcacc0f902f8cc2ea0f39c9e8a79ef09c26312c80124048ad7d6b",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/typeorm-seeding/dist/types.d.ts": {
-        "version": "00cad3815ea88d2ffb3c89acb0df887f8613dcbccb269a40faaef3d34ec00a2c",
-        "signature": "00cad3815ea88d2ffb3c89acb0df887f8613dcbccb269a40faaef3d34ec00a2c",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/typeorm-seeding/dist/connection.d.ts": {
-        "version": "761c8e9d4ed9ee54553f8f7eeaf25bd3449cb3edb732999d8091bad931c36284",
-        "signature": "761c8e9d4ed9ee54553f8f7eeaf25bd3449cb3edb732999d8091bad931c36284",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/typeorm-seeding/dist/importer.d.ts": {
-        "version": "99dcc30a747206e9d4a01b13a699413105b7b4f1538cec6a96b984c887c1117b",
-        "signature": "99dcc30a747206e9d4a01b13a699413105b7b4f1538cec6a96b984c887c1117b",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/typeorm-seeding/dist/helpers.d.ts": {
-        "version": "8039e022b04c0c0684a62b9dc2511fb4be70e6cb22d565b349e79e3cf151830a",
-        "signature": "8039e022b04c0c0684a62b9dc2511fb4be70e6cb22d565b349e79e3cf151830a",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/typeorm-seeding/dist/typeorm-seeding.d.ts": {
-        "version": "be4d73e64e71a681df95f5d499a57dfdbaee600467bc743bacd4b7955af2a972",
-        "signature": "be4d73e64e71a681df95f5d499a57dfdbaee600467bc743bacd4b7955af2a972",
-        "affectsGlobalScope": false
-      },
-      "../src/database/factories/account.factory.ts": {
-        "version": "cd46c835a1112c71afd09c8c80be8e406040fba83125d18cca16e4d76fe6015c",
-        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
-        "affectsGlobalScope": false
-      },
-      "../src/database/factories/grade.factory.ts": {
-        "version": "1ca6f2e2b65390116dde5a0d9bb48fea4f1b1ca6b7ddfed0fb32f38c58836161",
-        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
-        "affectsGlobalScope": false
-      },
-      "../src/database/seed/account.seed.ts": {
-        "version": "41ebecc6bc2c84f02b1782922801353af6e1d21700a5c85d2482af4dee29da96",
-        "signature": "768ff4a3a6075c2e5f6bb09e1277ebbd9983bc3a13a146a162b64d656554c4e4",
-        "affectsGlobalScope": false
-      },
-      "../src/database/seed/grade.seed.ts": {
-        "version": "84c0cfa9e5584e4c23890178ad974998e01dba88cf7dc6c4a9c6c3e45b1c20d7",
-        "signature": "768ff4a3a6075c2e5f6bb09e1277ebbd9983bc3a13a146a162b64d656554c4e4",
+        "version": "3ec2a48a1cf125a85e3d3998a7f47f933153b2dae696385dd5789c9215b1828e",
+        "signature": "26286417e007e6e7610b9244cdac620fedb114b7d3b52e170741595f0828e259",
         "affectsGlobalScope": false
       },
       "../node_modules/class-transformer/classtransformoptions.d.ts": {
@@ -6790,9 +6695,89 @@
         "signature": "4994cd554e1e646d7b9704225b821fac88ec38628031d1cfe3cf28ce3c9a4efb",
         "affectsGlobalScope": false
       },
+      "../src/course/course.gpl.ts": {
+        "version": "1aaf90b043186e6d711a6d609adb983a346e92607d1570ddca8ea64a5e8dfbe6",
+        "signature": "e7c706f5d14a156e076c93c8c699ea32481d012d79518a744b66445c41e54ba5",
+        "affectsGlobalScope": false
+      },
+      "../src/course/course.dto.ts": {
+        "version": "4e87564211850e5009ba0359a7a91d35baf934fe2ecf7fd13ef6898700b0ca03",
+        "signature": "69d06b222d61a7dfdc02cb12f16b601fb2f215557f697ef7a913408525cec84c",
+        "affectsGlobalScope": false
+      },
+      "../src/course/course.service.ts": {
+        "version": "900062a483e5705d4f2f599a0e291c21f4df45b636931976d32de33a1fb35180",
+        "signature": "32c1a45f806c1ca87a73cbfc73d186ac609d09aba989670527f6b3f6fa894e49",
+        "affectsGlobalScope": false
+      },
+      "../src/course/course.resolver.ts": {
+        "version": "d9b081906d0b8fc5eed2b446f981e042ef52392c766221110842d75621edc818",
+        "signature": "585270b7a6f8e7671daa9a722ebfda6023c15f2344f0d46afc373d84201f8676",
+        "affectsGlobalScope": false
+      },
+      "../src/course/course.module.ts": {
+        "version": "e84d3df4e9b96573442c8433ce89c71c1b71d64bee41c0739912565e66e2e318",
+        "signature": "426a31ac2d4b0af6239f6a93cbb2a2eace328722f114b33501322b2562dee220",
+        "affectsGlobalScope": false
+      },
+      "../src/student_course/student.gpl.ts": {
+        "version": "a73b9aacad78e28fa5dc48941312265e932c6ce39883338abe505859e2d97141",
+        "signature": "80a24c434598ec3c00c3f4ac291fcecbb8032d43cc5821c110adbcb304348d30",
+        "affectsGlobalScope": false
+      },
+      "../src/student_course/student_dto.ts": {
+        "version": "b13da7b77fa0f926be18b64accbbff623d641186cefbd5c1ad2bfe61744a48e3",
+        "signature": "8453054fc9f3ce18cbaea82b7f778ac9647984200dfa6f733f0c9245c61259fc",
+        "affectsGlobalScope": false
+      },
       "../src/student_course/student_course.service.ts": {
-        "version": "7c5850e4e29b9385ca08c365c9253a9215701d1c2a0505d8e78b8ab0680fe029",
-        "signature": "e766723b7b2142e818cb4ce36145b54e337b9db377c80b20616da5275d29c0e1",
+        "version": "3e8dfb3f27904106333af7d17d7f600356934ff717f84b2afd16325d31515989",
+        "signature": "d1d7ce84fcbb704f5334539353612516e8627f4e765c9c5fe88ebea79b1812fd",
+        "affectsGlobalScope": false
+      },
+      "../src/student_course/student_course.resolver.ts": {
+        "version": "cf0245af23334e6d468b4876e6b0d9aeac48ce8079685f925ca833f23655b1da",
+        "signature": "9ab30a078abf8391ab12277a6f7aec1e8d880145f01d2a0d113bc5c27f3c4992",
+        "affectsGlobalScope": false
+      },
+      "../src/student_course/student.module.ts": {
+        "version": "aa7fcf91b452637291ea5bb89dfe71e8ea2579b215655b632f21e378d7d733d2",
+        "signature": "1c96c46f4c97389adc49b95b3c8c8b21c1bbbfcd3a61f8071fbdbf9d51e15bce",
+        "affectsGlobalScope": false
+      },
+      "../src/student_grade/student_grade.dto.ts": {
+        "version": "d7d6dffabec1453ef36ea342129582f80f2e0bab7af8ff301a406e118f5d77ad",
+        "signature": "405bf94f69b0756bdd5f8a08908f47c2e9fc68049c6c38ddd6db83805d316309",
+        "affectsGlobalScope": false
+      },
+      "../src/student_grade/student_grade.service.ts": {
+        "version": "312d216d58968d020ec47f58333d80c29286cba1320645e8cd879a4ddbdcc7f2",
+        "signature": "8facd3d47dffd5d879bd9f530a95a4197cf01850929f4f9c76174f1ec9f1fb68",
+        "affectsGlobalScope": false
+      },
+      "../src/student_grade/student_grade.gpl.ts": {
+        "version": "ccdc69b8f9dde77cada7250f70cf43a9106cda1c998b15412b2177a53e010cb4",
+        "signature": "9c81e05d0bcb39f9dbc8662f163bec6084a8ea05c64e8c2ac442bf782d3fefdf",
+        "affectsGlobalScope": false
+      },
+      "../src/student_grade/student_grade.resolver.ts": {
+        "version": "a14c6577c712bc869b14dd0ff1294e458227823bc88cc6ae3dc3d9f2115a22a4",
+        "signature": "90991c50d24d95cc48f889ed7929194eb738e34caae1229d3723973ae8cb213f",
+        "affectsGlobalScope": false
+      },
+      "../src/student_grade/student_grade.module.ts": {
+        "version": "308acbfb07c092064187b69924068b011c9e09db59faef3f08dc6aae85a9f2d3",
+        "signature": "937db9129aead806a992a1db89edccb114fa5541a289023244ba74c6575984f1",
+        "affectsGlobalScope": false
+      },
+      "../src/app.module.ts": {
+        "version": "32be1b544436add787691a3162d172a716a5d37a6069b939b5cde9ad409075a4",
+        "signature": "9fc7f7b6ad854404973b8cba8e6d883f758237991968e9a3965d716d46f1da88",
+        "affectsGlobalScope": false
+      },
+      "../src/main.ts": {
+        "version": "f76a570e82bee94b7133bcc457f47e2e150bf757bcf7b9333285257b357cbc9c",
+        "signature": "0e7c6f172815224902d2b780918250d131abb33ddc0f2e042ab423db53f72370",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/anymatch/index.d.ts": {
@@ -6849,6 +6834,11 @@
         "version": "725d9be2fd48440256f4deb00649adffdbc5ecd282b09e89d4e200663792c34c",
         "signature": "725d9be2fd48440256f4deb00649adffdbc5ecd282b09e89d4e200663792c34c",
         "affectsGlobalScope": false
+      },
+      "../node_modules/@types/faker/index.d.ts": {
+        "version": "7949f1133bcca7581df8fd7a9be3b4f407c4c80edbf21957ea00e7f6cbad0e02",
+        "signature": "7949f1133bcca7581df8fd7a9be3b4f407c4c80edbf21957ea00e7f6cbad0e02",
+        "affectsGlobalScope": true
       },
       "../node_modules/@types/graceful-fs/index.d.ts": {
         "version": "2c7dca525f4e2e5f2b357dacb58ab6c8777995e6d505ef652bcbbf9789ac558f",
@@ -17344,75 +17334,6 @@
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
-      "../node_modules/typeorm-seeding/dist/connection.d.ts": [
-        "../node_modules/@types/graceful-fs/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/typeorm/driver/aurora-data-api/auroradataapiconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/cockroachdb/cockroachconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/cordova/cordovaconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/expo/expoconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/mongodb/mongoconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/mysql/mysqlconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/nativescript/nativescriptconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/oracle/oracleconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/postgres/postgresconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/react-native/reactnativeconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/sap/sapconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/sqlite/sqliteconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/sqljs/sqljsconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/sqlserver/sqlserverconnectionoptions.d.ts",
-        "../node_modules/typeorm/index.d.ts"
-      ],
-      "../node_modules/typeorm-seeding/dist/entity-factory.d.ts": [
-        "../node_modules/@types/graceful-fs/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/typeorm-seeding/dist/types.d.ts",
-        "../node_modules/typeorm/index.d.ts"
-      ],
-      "../node_modules/typeorm-seeding/dist/helpers.d.ts": [
-        "../node_modules/@types/graceful-fs/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts"
-      ],
-      "../node_modules/typeorm-seeding/dist/importer.d.ts": [
-        "../node_modules/@types/graceful-fs/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/typeorm-seeding/dist/types.d.ts"
-      ],
-      "../node_modules/typeorm-seeding/dist/typeorm-seeding.d.ts": [
-        "../node_modules/@types/graceful-fs/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/reflect-metadata/index.d.ts",
-        "../node_modules/typeorm-seeding/dist/connection.d.ts",
-        "../node_modules/typeorm-seeding/dist/helpers.d.ts",
-        "../node_modules/typeorm-seeding/dist/importer.d.ts",
-        "../node_modules/typeorm-seeding/dist/types.d.ts",
-        "../node_modules/typeorm/index.d.ts"
-      ],
-      "../node_modules/typeorm-seeding/dist/types.d.ts": [
-        "../node_modules/@types/faker/index.d.ts",
-        "../node_modules/@types/graceful-fs/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/typeorm-seeding/dist/entity-factory.d.ts",
-        "../node_modules/typeorm/index.d.ts"
-      ],
       "../node_modules/typeorm/cache/queryresultcache.d.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -20166,15 +20087,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/zen-observable-ts/lib/types.d.ts"
       ],
-      "../src/app.controller.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@types/graceful-fs/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../src/app.service.ts"
-      ],
       "../src/app.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/core/index.d.ts",
@@ -20185,33 +20097,57 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
-        "../src/app.controller.ts",
-        "../src/app.service.ts",
+        "../src/course/course.module.ts",
         "../src/database/database.connection.service.ts",
         "../src/shared/logging-interceptor.ts",
+        "../src/shared/validation-pipe.ts",
+        "../src/student_course/student.module.ts",
+        "../src/student_grade/student_grade.module.ts",
         "../src/user/user.module.ts"
       ],
-      "../src/app.service.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
+      "../src/course/course.dto.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts"
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/class-validator/types/index.d.ts"
       ],
       "../src/course/course.gpl.ts": [
+        "../node_modules/@nestjs/graphql/index.d.ts",
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
-      "../src/course/course.resolver.ts": [
+      "../src/course/course.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts"
+        "../node_modules/@types/node/util.d.ts",
+        "../src/course/course.resolver.ts",
+        "../src/course/course.service.ts",
+        "../src/entity/courses.ts",
+        "../src/entity/user.ts"
+      ],
+      "../src/course/course.resolver.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/graphql/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/course/course.gpl.ts",
+        "../src/course/course.service.ts",
+        "../src/entity/courses.ts",
+        "../src/shared/auth-guard.ts"
       ],
       "../src/course/course.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -20222,6 +20158,7 @@
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/typeorm/index.d.ts",
+        "../src/course/course.dto.ts",
         "../src/entity/courses.ts",
         "../src/entity/user.ts"
       ],
@@ -20233,54 +20170,6 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts"
-      ],
-      "../src/database/factories/account.factory.ts": [
-        "../node_modules/@types/faker/index.d.ts",
-        "../node_modules/@types/graceful-fs/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/typeorm-seeding/dist/typeorm-seeding.d.ts",
-        "../src/entity/account_type.ts"
-      ],
-      "../src/database/factories/grade.factory.ts": [
-        "../node_modules/@types/faker/index.d.ts",
-        "../node_modules/@types/graceful-fs/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/typeorm-seeding/dist/typeorm-seeding.d.ts",
-        "../src/entity/grade.ts"
-      ],
-      "../src/database/seed/account.seed.ts": [
-        "../node_modules/@types/graceful-fs/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/typeorm-seeding/dist/typeorm-seeding.d.ts",
-        "../node_modules/typeorm/index.d.ts",
-        "../src/entity/account_type.ts"
-      ],
-      "../src/database/seed/grade.seed.ts": [
-        "../node_modules/@types/graceful-fs/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/typeorm-seeding/dist/typeorm-seeding.d.ts",
-        "../node_modules/typeorm/index.d.ts",
-        "../src/entity/grade.ts"
-      ],
-      "../src/entity/account_type.ts": [
-        "../node_modules/@types/graceful-fs/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/typeorm/index.d.ts"
       ],
       "../src/entity/auth.ts": [
         "../node_modules/@types/bcryptjs/index.d.ts",
@@ -20299,7 +20188,8 @@
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/typeorm/index.d.ts",
-        "../src/entity/student_courses.ts",
+        "../src/entity/grade.ts",
+        "../src/entity/student_course.ts",
         "../src/entity/user.ts"
       ],
       "../src/entity/grade.ts": [
@@ -20308,10 +20198,9 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
-        "../node_modules/typeorm/index.d.ts",
-        "../src/entity/student_courses.ts"
+        "../node_modules/typeorm/index.d.ts"
       ],
-      "../src/entity/student_courses.ts": [
+      "../src/entity/student_course.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -20331,8 +20220,7 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/class-validator/types/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
-        "../src/entity/account_type.ts",
-        "../src/entity/student_courses.ts"
+        "../src/entity/student_course.ts"
       ],
       "../src/main.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -20357,6 +20245,7 @@
       ],
       "../src/shared/logging-interceptor.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/graphql/index.d.ts",
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -20375,6 +20264,42 @@
         "../node_modules/class-transformer/index.d.ts",
         "../node_modules/class-validator/types/index.d.ts"
       ],
+      "../src/student_course/student.gpl.ts": [
+        "../node_modules/@nestjs/graphql/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/student_course/student.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/entity/courses.ts",
+        "../src/entity/student_course.ts",
+        "../src/entity/user.ts",
+        "../src/student_course/student_course.resolver.ts",
+        "../src/student_course/student_course.service.ts"
+      ],
+      "../src/student_course/student_course.resolver.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/graphql/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/shared/auth-guard.ts",
+        "../src/student_course/student.gpl.ts",
+        "../src/student_course/student_course.service.ts",
+        "../src/student_course/student_dto.ts"
+      ],
       "../src/student_course/student_course.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
@@ -20385,8 +20310,79 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/typeorm/index.d.ts",
         "../src/entity/courses.ts",
-        "../src/entity/student_courses.ts",
-        "../src/entity/user.ts"
+        "../src/entity/grade.ts",
+        "../src/entity/student_course.ts",
+        "../src/entity/user.ts",
+        "../src/student_course/student.gpl.ts",
+        "../src/student_course/student_dto.ts"
+      ],
+      "../src/student_course/student_dto.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/student_grade/student_grade.dto.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/student_grade/student_grade.gpl.ts": [
+        "../node_modules/@nestjs/graphql/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/student_grade/student_grade.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/entity/courses.ts",
+        "../src/entity/grade.ts",
+        "../src/entity/student_course.ts",
+        "../src/entity/user.ts",
+        "../src/student_grade/student_grade.resolver.ts",
+        "../src/student_grade/student_grade.service.ts"
+      ],
+      "../src/student_grade/student_grade.resolver.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/graphql/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/course/course.gpl.ts",
+        "../src/shared/auth-guard.ts",
+        "../src/student_course/student.gpl.ts",
+        "../src/student_grade/student_grade.gpl.ts",
+        "../src/student_grade/student_grade.service.ts"
+      ],
+      "../src/student_grade/student_grade.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/course/course.dto.ts",
+        "../src/entity/courses.ts",
+        "../src/entity/grade.ts",
+        "../src/entity/student_course.ts",
+        "../src/entity/user.ts",
+        "../src/student_grade/student_grade.dto.ts",
+        "../src/user/user.dto.ts"
       ],
       "../src/user/user.dto.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
@@ -20412,7 +20408,6 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
-        "../src/entity/account_type.ts",
         "../src/entity/auth.ts",
         "../src/entity/user.ts",
         "../src/user/user.resolver.ts",
@@ -20440,7 +20435,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/moment/ts3.1-typings/moment.d.ts",
         "../node_modules/typeorm/index.d.ts",
-        "../src/entity/account_type.ts",
         "../src/entity/auth.ts",
         "../src/entity/user.ts",
         "../src/user/user.dto.ts"
@@ -30742,75 +30736,6 @@
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
-      "../node_modules/typeorm-seeding/dist/connection.d.ts": [
-        "../node_modules/@types/graceful-fs/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/typeorm/driver/aurora-data-api/auroradataapiconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/cockroachdb/cockroachconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/cordova/cordovaconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/expo/expoconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/mongodb/mongoconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/mysql/mysqlconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/nativescript/nativescriptconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/oracle/oracleconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/postgres/postgresconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/react-native/reactnativeconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/sap/sapconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/sqlite/sqliteconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/sqljs/sqljsconnectionoptions.d.ts",
-        "../node_modules/typeorm/driver/sqlserver/sqlserverconnectionoptions.d.ts",
-        "../node_modules/typeorm/index.d.ts"
-      ],
-      "../node_modules/typeorm-seeding/dist/entity-factory.d.ts": [
-        "../node_modules/@types/graceful-fs/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/typeorm-seeding/dist/types.d.ts",
-        "../node_modules/typeorm/index.d.ts"
-      ],
-      "../node_modules/typeorm-seeding/dist/helpers.d.ts": [
-        "../node_modules/@types/graceful-fs/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts"
-      ],
-      "../node_modules/typeorm-seeding/dist/importer.d.ts": [
-        "../node_modules/@types/graceful-fs/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/typeorm-seeding/dist/types.d.ts"
-      ],
-      "../node_modules/typeorm-seeding/dist/typeorm-seeding.d.ts": [
-        "../node_modules/@types/graceful-fs/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/reflect-metadata/index.d.ts",
-        "../node_modules/typeorm-seeding/dist/connection.d.ts",
-        "../node_modules/typeorm-seeding/dist/helpers.d.ts",
-        "../node_modules/typeorm-seeding/dist/importer.d.ts",
-        "../node_modules/typeorm-seeding/dist/types.d.ts",
-        "../node_modules/typeorm/index.d.ts"
-      ],
-      "../node_modules/typeorm-seeding/dist/types.d.ts": [
-        "../node_modules/@types/faker/index.d.ts",
-        "../node_modules/@types/graceful-fs/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/typeorm-seeding/dist/entity-factory.d.ts",
-        "../node_modules/typeorm/index.d.ts"
-      ],
       "../node_modules/typeorm/cache/queryresultcache.d.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -33564,43 +33489,35 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/zen-observable-ts/lib/types.d.ts"
       ],
-      "../src/app.controller.ts": [
-        "../src/app.service.ts"
+      "../src/course/course.resolver.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/course/course.gpl.ts",
+        "../src/course/course.service.ts",
+        "../src/entity/courses.ts"
       ],
       "../src/course/course.service.ts": [
         "../node_modules/typeorm/index.d.ts",
+        "../src/course/course.dto.ts",
         "../src/entity/courses.ts",
         "../src/entity/user.ts"
       ],
       "../src/database/database.connection.service.ts": [
         "../node_modules/@nestjs/typeorm/index.d.ts"
       ],
-      "../src/database/seed/account.seed.ts": [
-        "../node_modules/typeorm-seeding/dist/typeorm-seeding.d.ts",
-        "../node_modules/typeorm/index.d.ts"
-      ],
-      "../src/database/seed/grade.seed.ts": [
-        "../node_modules/typeorm-seeding/dist/typeorm-seeding.d.ts",
-        "../node_modules/typeorm/index.d.ts"
-      ],
       "../src/entity/auth.ts": [
         "../src/entity/user.ts"
       ],
       "../src/entity/courses.ts": [
-        "../src/entity/student_courses.ts",
+        "../src/entity/student_course.ts",
         "../src/entity/user.ts"
       ],
-      "../src/entity/grade.ts": [
-        "../src/entity/student_courses.ts"
-      ],
-      "../src/entity/student_courses.ts": [
+      "../src/entity/student_course.ts": [
         "../src/entity/courses.ts",
         "../src/entity/grade.ts",
         "../src/entity/user.ts"
       ],
       "../src/entity/user.ts": [
-        "../src/entity/account_type.ts",
-        "../src/entity/student_courses.ts"
+        "../src/entity/student_course.ts"
       ],
       "../src/shared/auth-guard.ts": [
         "../node_modules/@nestjs/common/index.d.ts"
@@ -33612,19 +33529,41 @@
       "../src/shared/validation-pipe.ts": [
         "../node_modules/@nestjs/common/index.d.ts"
       ],
+      "../src/student_course/student_course.resolver.ts": [
+        "../src/entity/courses.ts",
+        "../src/entity/student_course.ts",
+        "../src/student_course/student.gpl.ts",
+        "../src/student_course/student_course.service.ts"
+      ],
       "../src/student_course/student_course.service.ts": [
         "../node_modules/typeorm/index.d.ts",
         "../src/entity/courses.ts",
-        "../src/entity/student_courses.ts",
-        "../src/entity/user.ts"
+        "../src/entity/student_course.ts",
+        "../src/entity/user.ts",
+        "../src/student_course/student_dto.ts"
+      ],
+      "../src/student_grade/student_grade.resolver.ts": [
+        "../src/course/course.gpl.ts",
+        "../src/student_grade/student_grade.gpl.ts",
+        "../src/student_grade/student_grade.service.ts"
+      ],
+      "../src/student_grade/student_grade.service.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/course/course.dto.ts",
+        "../src/entity/courses.ts",
+        "../src/entity/grade.ts",
+        "../src/entity/student_course.ts",
+        "../src/entity/user.ts",
+        "../src/student_grade/student_grade.dto.ts",
+        "../src/user/user.dto.ts"
       ],
       "../src/user/user.resolver.ts": [
+        "../src/entity/user.ts",
         "../src/user/user.gpl.ts",
         "../src/user/user.service.ts"
       ],
       "../src/user/user.service.ts": [
         "../node_modules/typeorm/index.d.ts",
-        "../src/entity/account_type.ts",
         "../src/entity/auth.ts",
         "../src/entity/user.ts",
         "../src/user/user.dto.ts"
@@ -34714,12 +34653,6 @@
       "../node_modules/subscriptions-transport-ws/dist/protocol.d.ts",
       "../node_modules/subscriptions-transport-ws/dist/server.d.ts",
       "../node_modules/ts-morph/lib/ts-morph.d.ts",
-      "../node_modules/typeorm-seeding/dist/connection.d.ts",
-      "../node_modules/typeorm-seeding/dist/entity-factory.d.ts",
-      "../node_modules/typeorm-seeding/dist/helpers.d.ts",
-      "../node_modules/typeorm-seeding/dist/importer.d.ts",
-      "../node_modules/typeorm-seeding/dist/typeorm-seeding.d.ts",
-      "../node_modules/typeorm-seeding/dist/types.d.ts",
       "../node_modules/typeorm/cache/queryresultcache.d.ts",
       "../node_modules/typeorm/cache/queryresultcacheoptions.d.ts",
       "../node_modules/typeorm/common/deeppartial.d.ts",
@@ -35009,28 +34942,32 @@
       "../node_modules/zen-observable-ts/lib/index.d.ts",
       "../node_modules/zen-observable-ts/lib/types.d.ts",
       "../node_modules/zen-observable-ts/lib/zenobservable.d.ts",
-      "../src/app.controller.ts",
       "../src/app.module.ts",
-      "../src/app.service.ts",
+      "../src/course/course.dto.ts",
       "../src/course/course.gpl.ts",
+      "../src/course/course.module.ts",
       "../src/course/course.resolver.ts",
       "../src/course/course.service.ts",
       "../src/database/database.connection.service.ts",
-      "../src/database/factories/account.factory.ts",
-      "../src/database/factories/grade.factory.ts",
-      "../src/database/seed/account.seed.ts",
-      "../src/database/seed/grade.seed.ts",
-      "../src/entity/account_type.ts",
       "../src/entity/auth.ts",
       "../src/entity/courses.ts",
       "../src/entity/grade.ts",
-      "../src/entity/student_courses.ts",
+      "../src/entity/student_course.ts",
       "../src/entity/user.ts",
       "../src/main.ts",
       "../src/shared/auth-guard.ts",
       "../src/shared/logging-interceptor.ts",
       "../src/shared/validation-pipe.ts",
+      "../src/student_course/student.gpl.ts",
+      "../src/student_course/student.module.ts",
+      "../src/student_course/student_course.resolver.ts",
       "../src/student_course/student_course.service.ts",
+      "../src/student_course/student_dto.ts",
+      "../src/student_grade/student_grade.dto.ts",
+      "../src/student_grade/student_grade.gpl.ts",
+      "../src/student_grade/student_grade.module.ts",
+      "../src/student_grade/student_grade.resolver.ts",
+      "../src/student_grade/student_grade.service.ts",
       "../src/user/user.dto.ts",
       "../src/user/user.gpl.ts",
       "../src/user/user.module.ts",

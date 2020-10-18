@@ -8,12 +8,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.LoggingInterceptor = void 0;
 const common_1 = require("@nestjs/common");
-const operators_1 = require("rxjs/operators");
+const graphql_1 = require("@nestjs/graphql");
 let LoggingInterceptor = class LoggingInterceptor {
-    intercept(context, next) {
+    intercept(context) {
         console.log('Before...');
-        const now = Date.now();
-        return next.handle().pipe(operators_1.tap(() => console.log(`After... ${Date.now() - now}ms`)));
+        const ctx = graphql_1.GqlExecutionContext.create(context);
+        const resolverName = ctx.constructorRef.name;
+        const info = ctx.getInfo();
+        return;
     }
 };
 LoggingInterceptor = __decorate([

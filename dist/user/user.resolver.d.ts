@@ -4,34 +4,38 @@ export declare class UserResolver {
     private readonly userService;
     constructor(userService: UserService);
     users(): Promise<{
-        id: string;
+        id: number;
         name: string;
         bio: string;
         email: string;
+        accountType: import("../entity/User").account;
         created_at: string;
         token: string;
     }[]>;
     user(user: any): Promise<{
-        id: string;
+        id: number;
         name: string;
         bio: string;
         email: string;
+        accountType: import("../entity/User").account;
         created_at: string;
         token: string;
     }>;
-    login(input: LoginInput): Promise<{
-        id: string;
+    signin(input: LoginInput): Promise<{
+        id: number;
         name: string;
         bio: string;
         email: string;
+        accountType: import("../entity/User").account;
         created_at: string;
         token: string;
     }>;
-    register(input: RegisterInput, password: AuthInput): Promise<{
-        id: string;
+    signup(input: RegisterInput, password: AuthInput): Promise<{
+        id: number;
         name: string;
         bio: string;
         email: string;
+        accountType: import("../entity/User").account;
         created_at: string;
         token: string;
     }>;

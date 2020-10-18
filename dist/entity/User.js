@@ -9,17 +9,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.User = void 0;
+exports.User = exports.account = void 0;
 const typeorm_1 = require("typeorm");
 const class_validator_1 = require("class-validator");
-const Student_courses_1 = require("./Student_courses");
-const Account_type_1 = require("./Account_type");
 const jwt = require("jsonwebtoken");
+const Student_course_1 = require("./Student_course");
+var account;
+(function (account) {
+    account[account["student"] = 0] = "student";
+    account[account["instructor"] = 1] = "instructor";
+})(account = exports.account || (exports.account = {}));
 let User = class User {
     constructor() {
         this.toResponseObject = (showToken = true) => {
-            const { id, name, bio, created_at, email, token } = this;
-            const responseObject = { id, name, bio, email, created_at, token };
+            const { id, name, bio, created_at, accountType, email, token } = this;
+            const responseObject = {
+                id,
+                name,
+                bio,
+                email,
+                accountType,
+                created_at,
+                token,
+            };
             if (showToken) {
                 responseObject.token = token;
             }
@@ -34,8 +46,8 @@ let User = class User {
     }
 };
 __decorate([
-    typeorm_1.PrimaryGeneratedColumn('uuid'),
-    __metadata("design:type", String)
+    typeorm_1.PrimaryGeneratedColumn({ type: 'bigint' }),
+    __metadata("design:type", Number)
 ], User.prototype, "id", void 0);
 __decorate([
     typeorm_1.Column({ name: 'name', nullable: false }),
@@ -56,12 +68,11 @@ __decorate([
     __metadata("design:type", String)
 ], User.prototype, "created_at", void 0);
 __decorate([
-    typeorm_1.OneToOne(type => Account_type_1.Account_type),
-    typeorm_1.JoinColumn({ name: 'account_type' }),
-    __metadata("design:type", Account_type_1.Account_type)
-], User.prototype, "account", void 0);
+    typeorm_1.Column({ type: 'enum', enum: account, default: account.student }),
+    __metadata("design:type", Number)
+], User.prototype, "accountType", void 0);
 __decorate([
-    typeorm_1.OneToMany(type => Student_courses_1.Student_course, student_courses => student_courses.user),
+    typeorm_1.OneToMany(type => Student_course_1.Student_course, student_course => student_course.user),
     __metadata("design:type", Array)
 ], User.prototype, "student_courses", void 0);
 User = __decorate([
