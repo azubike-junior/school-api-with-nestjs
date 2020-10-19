@@ -8,10 +8,7 @@ async function bootstrap() {
     const server_host = process.env.DB_HOST || '0.0.0.0';
     const server_port = process.env.PORT || 80;
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
-    await app.listen(server_port, server_host, () => {
-        common_1.Logger.log(console.log(`server running on port 4040`));
-    });
-    ;
+    await app.listen(process.env.PORT || 4040, '0.0.0.0').then(() => common_1.Logger.log(console.log(`server running on port 4040`)));
 }
 bootstrap();
 //# sourceMappingURL=main.js.map

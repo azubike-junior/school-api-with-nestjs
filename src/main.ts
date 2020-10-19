@@ -9,9 +9,7 @@ async function bootstrap() {
   const server_port =  process.env.PORT || 80;
 
   const app = await NestFactory.create(AppModule);
-  await app.listen(server_port, server_host, () => {
-    Logger.log(console.log(`server running on port 4040`))
-  });
+  await app.listen(process.env.PORT || 4040, '0.0.0.0').then(() => Logger.log(console.log(`server running on port 4040`)) )
   ;
 }
 bootstrap();
