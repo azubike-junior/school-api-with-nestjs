@@ -1,15 +1,11 @@
-import { Injectable } from '@nestjs/common';
+import {ConnectionOptions} from 'typeorm';
 import 'dotenv/config';
-import { TypeOrmOptionsFactory, TypeOrmModuleOptions } from '@nestjs/typeorm';
 const { DB_HOST, DB_PORT, DEV_DB, DB_PASSWORD, DATABASE_URL, DB_NAME, NODE_ENV } = process.env;
 
 const env = NODE_ENV === 'development' ? DEV_DB : DATABASE_URL
 
-@Injectable()
-export class DatabaseConnectionService implements TypeOrmOptionsFactory {
-  createTypeOrmOptions(): TypeOrmModuleOptions {
-    return {
-      type:'postgres',
+const config: ConnectionOptions = {
+    type: 'postgres',
       url: env,
       synchronize: false,
       migrations: [__dirname + '/migrations/**/*{.ts,.js}'],
@@ -21,8 +17,7 @@ export class DatabaseConnectionService implements TypeOrmOptionsFactory {
         entitiesDir: 'src/entity',
         migrationsDir: 'src/migrations',
         subscribersDir: 'src/subscriber',
-      },
-      keepConnectionAlive: true,
-    };
-  }
-}
+    },
+};
+
+export = config;
