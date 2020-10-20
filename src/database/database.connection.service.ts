@@ -1,6 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import 'dotenv/config';
+import * as dotenv from  'dotenv';
 import { TypeOrmOptionsFactory, TypeOrmModuleOptions } from '@nestjs/typeorm';
+dotenv.config()
+
 const { DB_HOST, DB_PORT, DEV_DB, DB_PASSWORD, DATABASE_URL, DB_NAME, NODE_ENV } = process.env;
 
 const env = NODE_ENV === 'development' ? DEV_DB : DATABASE_URL
