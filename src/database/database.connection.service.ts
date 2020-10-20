@@ -18,7 +18,7 @@ export class DatabaseConnectionService implements TypeOrmOptionsFactory {
       migrationsRun: true,
       dropSchema: false,
       logging: false,
-      entities: ['dist/**/*{.ts,.js}'],
+      entities: ["dist/**/*{.ts,.js}"],
       cli: {
         entitiesDir: 'src/entity',
         migrationsDir: 'src/migrations',

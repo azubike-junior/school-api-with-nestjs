@@ -1,0 +1,16 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "synchronize":"false",
+  "username": "postgres",
+  "database": "school",
+  "port": "5432",
+  "password": "intimacy119900",
+  "seeds": ["src/database/seed/**/*{.ts,.js}"],
+  "factories": ["src/database/factories/**/*{.ts,.js}"],
+  "migrations": ["migrations/*ts,.js"],
+  "cli": {
+    "migrationsDir": "migrations"
+  },
+  "entities": ["dist/**/*{.ts,.js}"]
+}
