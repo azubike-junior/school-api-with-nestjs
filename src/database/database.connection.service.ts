@@ -13,7 +13,7 @@ export class DatabaseConnectionService implements TypeOrmOptionsFactory {
     return {
       type:'postgres',
       url: env,
-      synchronize: false,
+      synchronize: true,
       migrations: [__dirname + '/migrations/**/*{.ts,.js}'],
       migrationsRun: true,
       dropSchema: false,
