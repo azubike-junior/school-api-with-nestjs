@@ -23,6 +23,7 @@ export class Auth {
   @Column({ nullable: true })
   user_id: string;
 
+
   @BeforeInsert()
   async hashPassword() {
     this.password = await bcrypt.hash(this.password, 10);

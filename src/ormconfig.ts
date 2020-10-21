@@ -6,7 +6,7 @@ const env = NODE_ENV === 'development' ? DEV_DB : DATABASE_URL
 
 
 const config: ConnectionOptions = {
-        type:'postgres',
+      type:'postgres',
       url: env,
       synchronize: false,
       migrations: [__dirname + '/migrations/**/*{.ts,.js}'],

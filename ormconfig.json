@@ -1,4 +1,5 @@
 {
+  "name":"development",
   "type": "postgres",
   "host": "localhost",
   "synchronize":"false",
@@ -8,9 +9,9 @@
   "password": "intimacy119900",
   "seeds": ["src/database/seed/**/*{.ts,.js}"],
   "factories": ["src/database/factories/**/*{.ts,.js}"],
-  "migrations": ["migrations/*ts,.js"],
+  "migrations": ["src/migrations/**/*.ts,.js"],
   "cli": {
-    "migrationsDir": "migrations"
+    "migrationsDir": "src/migrations"
   },
   "entities": ["dist/**/*{.ts,.js}"]
 }
