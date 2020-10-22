@@ -8,6 +8,7 @@ dotenv.config()
 async function bootstrap() {
 
   const app = await NestFactory.create(AppModule);
+  app.enableCors()
   await app.listen(process.env.PORT || 4040);
   Logger.log(console.log(`server running on port 4040`));
 }
