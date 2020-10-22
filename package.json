@@ -10,8 +10,8 @@
     "npm":"6.14.8"
   },
   "scripts": {
-    "prebuild": "rimraf dist",
-    "build": "nest build",
+    "build": "tsc -p tsconfig.build.json",
+    "prestart:prod": "rimraf dist && npm run build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dist": "node dist/main.js",
@@ -22,8 +22,7 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js --config src/ormconfig.ts" ,
-    "typeorm:migrate":"npm run typeorm migration:generate -- -n",
+    "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js --config src/ormconfig.ts",
     "typeorm:run": "npm run typeorm migration:run"
   },
   "dependencies": {
